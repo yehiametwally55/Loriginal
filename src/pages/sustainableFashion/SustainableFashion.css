@@ -1,0 +1,484 @@
+body {
+    margin: 0;
+}
+
+* {
+    box-sizing: border-box;
+}
+.fade-up {
+  opacity: 0; 
+  transform: translateY(60px); 
+  transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+.fade-up.visible {
+  opacity: 1; 
+  transform: translateY(0); 
+}
+section {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    padding: 20px;
+    overflow-x: hidden;
+    justify-content: center;
+    max-width: 100%;
+    width: 100%;
+    align-items: flex-start;
+}
+
+h1 {
+    text-align: center;
+    width: 100%;
+    background-color: #f7f6ec;
+    margin: 0;
+    font-size: 4rem !important;
+    font-weight: bold !important;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    color: #13130d;
+    font-style: normal;
+    font-family: "Georgia", serif;
+}
+/* Medium screens (tablets) */
+@media (max-width: 1024px) {
+  h1 {
+    font-size: 3rem !important;
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+}
+
+/* Small screens (mobiles) */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 2.2rem !important;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+}
+
+/* Extra small screens (very narrow phones) */
+@media (max-width: 480px) {
+  h1 {
+    font-size: 1.8rem !important;
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+}
+h2 {
+    text-align: left;
+    font-size: 32px;
+}
+
+.section-beige {
+    padding: 1.5%;   
+}
+
+/* .police-Texte {
+    color: #13130d;
+    font-weight: 700;
+    font-style: normal;
+    font-family: "Metropolis", sans-serif;
+} */
+
+.big-size-text {
+    font-size: 2.500em;
+}
+
+.padding-top {
+    padding-top: 10%;
+}
+
+.element-text-image {
+    align-items: center;
+    display: flex;
+    min-width: 300px;
+    flex-direction: column;
+    width: 50%;
+    flex: 1 1 45%;
+}
+
+.element-image-text {
+    align-items: center;
+    display: flex;
+    min-width: 300px;
+    flex-direction: column;
+    width: 50%;
+    flex: 1 1 45%;
+}
+
+.text-colonne {
+    padding-left: 40px;
+    padding-right: 20px;
+    text-align: center;
+}
+
+p {
+    font-size: 22px;
+    font-family: "Metropolis", sans-serif;
+    color: #707987;
+}
+
+.text-colonne-left {
+    padding-right: 20px;
+    text-align: left;
+    align-items: flex-start;     
+}
+
+.element-image-text img {
+    border-radius: 15px;
+}
+
+.paddings-10-10 {
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+.paddings-20-20 {
+    padding-left: 20%;
+    padding-right: 20%;
+}
+
+.color-fefff9 {
+    background-color: #fefff9;
+}
+
+.bg-white {
+    background-color: white;
+}
+
+section p {
+    text-align: center;
+}
+
+.sections {
+    display: flex;
+    position: relative;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+    margin: 0 auto;
+    padding: 0 20px;
+    padding-right: 10%;
+    padding-left: 10%;
+}
+
+.element-tier {
+    flex: 0 1 calc(33.333% - 13.33px);
+    padding: 20px 10px 10px 10px;
+    position: relative;
+    text-align: left;
+    padding: 0;
+    overflow: hidden;
+}
+
+.element-tier img {
+    width: 100%; 
+    height: auto;
+    display: block;
+    border-radius: 12px;
+    transition: transform 0.3s ease;
+    object-fit: cover; 
+}
+
+.element-tier p {
+    text-align: left;
+}
+
+.element-tier img:hover {
+    transform: scale(1.1);
+}
+
+.pied-image {
+    text-align: center;
+    height: 1.5%;
+}
+
+.pied-image img {
+    object-fit: cover;
+    width: 49px;
+}
+
+.no-space-center p {
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+.no-space-left p {
+    padding: 0;
+    margin: 0;
+    text-align: left;
+}
+
+@media (min-width: 768px) {
+    .element-tier {
+        width: 33.333%;
+        padding: 20px 10px 10px 10px;
+    }
+}
+
+.Original-offer-section {
+ background: linear-gradient(to top, #deb89d, #fff); 
+  padding: 100px 20px;
+  text-align: left;
+  color: #111;
+  font-family: 'Inter', sans-serif;
+}
+
+.Original-offer-section h2 {
+  width: 90%;
+  text-align: center;
+  font-family: "Metropolis", sans-serif !important;
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 40px;
+}
+
+.Original-offer-section p {
+  font-family: "Metropolis", sans-serif !important;
+  font-size: 21px;
+  max-width: 70%;
+  margin: 0 auto 20px;
+  line-height: 1.6;
+  color: #6d6d65;
+  font-weight: 500;
+}
+@media (max-width: 992px) {
+  .Original-offer-section {
+    padding: 70px 15px;
+  }
+
+  .Original-offer-section h2 {
+    font-size: 2rem;
+    width: 100%;
+    margin-bottom: 30px;
+  }
+
+  .Original-offer-section p {
+    font-size: 18px;
+    max-width: 90%;
+    line-height: 1.5;
+  }
+}
+
+@media (max-width: 576px) {
+  .Original-offer-section {
+    padding: 50px 10px;
+    text-align: center; 
+  }
+
+  .Original-offer-section h2 {
+    font-size: 1.5rem;
+  }
+
+  .Original-offer-section p {
+    font-size: 16px;
+    max-width: 100%;
+    padding: 0 10px;
+  }
+}
+.Commitments-section {
+ background: linear-gradient(to bottom, #deb89d, #cdeef4); 
+  padding: 100px 20px;
+  /* border-top: 1px solid; */
+  text-align: left;
+  color: #111;
+  font-family: 'Inter', sans-serif;
+}
+
+.Commitments-section h2 {
+  width: 90%;
+  text-align: center;
+  font-family: "Metropolis", sans-serif !important;
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 40px;
+}
+
+.Commitments-section p {
+  font-family: "Metropolis", sans-serif !important;
+  font-size: 21px;
+  max-width: 70%;
+  margin: 0 auto 20px;
+  line-height: 1.6;
+  color: #6d6d65;
+  font-weight: 500;
+}
+@media (max-width: 992px) {
+  .Commitments-section {
+    padding: 70px 15px;
+  }
+
+  .Commitments-section h2 {
+    font-size: 2rem;
+    width: 100%;
+    margin-bottom: 30px;
+  }
+
+  .Commitments-section p {
+    font-size: 18px;
+    max-width: 90%;
+    line-height: 1.5;
+  }
+}
+
+@media (max-width: 576px) {
+  .Commitments-section {
+    padding: 50px 10px;
+    text-align: center; 
+  }
+
+  .Commitments-section h2 {
+    font-size: 1.5rem;
+  }
+
+  .Commitments-section p {
+    font-size: 16px;
+    max-width: 100%;
+    padding: 0 10px;
+  }
+}
+.fashion-features-section {
+  position: relative; 
+  background: linear-gradient(135deg, #f7f6ec 0%, #edd2a3 50%, #dfdba9 100%);
+  overflow: hidden; 
+  padding: 120px 20px;
+  text-align: center;
+}
+
+
+
+
+.fashion-title {
+  font-family: "Playfair Display", serif;
+  font-size: 3rem;
+  text-transform: uppercase;
+  margin-bottom: 60px;
+  color: #3b2f2f;
+  text-shadow: 0 1px 1px rgba(255 255 255 / 0.7);
+  letter-spacing: 1.2px;
+  font-weight: bold;
+}
+
+.fashion-feature-card {
+  display: flex;
+  align-items: stretch;
+  margin-bottom: 60px;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  max-width: 1200px;
+  position: relative;
+  z-index: 1;
+}
+
+.fashion-feature-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.2);
+}
+
+.fashion-feature-card.reverse {
+  flex-direction: row-reverse;
+}
+
+.fashion-feature-card:nth-child(odd) {
+  margin-left: auto;
+  margin-right: 10%;
+}
+
+.fashion-feature-card:nth-child(even) {
+  margin-right: auto;
+  margin-left: 10%;
+}
+
+.fashion-feature-image {
+  flex: 1;
+  background-size: contain;
+  background-position: center;
+  min-height: 400px;
+}
+
+.fashion-feature-content {
+  flex: 1;
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(10px);
+  padding: 50px 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: left !important;
+  color: #2c2c2c;
+}
+
+.fashion-feature-content h3 {
+  font-family: "Playfair Display", serif;
+  font-weight: 700;
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #1a1a1a;
+  letter-spacing: 0.5px;
+
+}
+
+.fashion-feature-content p {
+  font-family: "Metropolis", sans-serif;
+  font-size: 1.1rem;
+  line-height: 1.9;
+  color: #555;
+  margin-bottom: 15px;
+  text-align: left;
+}
+
+.fashion-feature-content p strong {
+  color: #c3a04f; 
+  font-weight: 500;
+}
+
+.fashion-feature-content p:last-child {
+  margin-bottom: 0;
+}
+/* Optional: Add a subtle separator line */
+.fashion-feature-content::before {
+  content: "";
+  display: block;
+  width: 50px;
+  height: 3px;
+  background-color: #c3a04f;
+  margin-bottom: 25px;
+  border-radius: 2px;
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+  .fashion-feature-card {
+    flex-direction: column;
+    margin: 0 auto 40px auto;
+    max-width: 90%;
+  }
+  .fashion-feature-card.reverse {
+    flex-direction: column;
+  }
+  .fashion-feature-content {
+    text-align: center;
+    padding: 30px;
+  }
+}
+
+@media (max-width: 576px) {
+  .fashion-title {
+    font-size: 2.2rem;
+    margin-bottom: 40px;
+  }
+  .fashion-feature-content h3 {
+    font-size: 1.5rem;
+  }
+  .fashion-feature-content p {
+    font-size: 1rem;
+  }
+}
+
+

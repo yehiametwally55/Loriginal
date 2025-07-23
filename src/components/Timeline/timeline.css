@@ -1,0 +1,139 @@
+.fade-up {
+  opacity: 0; 
+  transform: translateY(40px); 
+  transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+.fade-up.visible {
+  opacity: 1; 
+  transform: translateY(0); 
+}
+.timeline-container {
+  background: #f7f6ec;
+  padding: 60px 20px;
+  width: 100%;
+}
+
+.timeline-title {
+  text-align: left;
+  font-family: "Playfair Display", serif;
+  font-size: 3rem;
+  margin-bottom: 50px;
+  color: #13130d;
+}
+
+.timeline {
+  position: relative;
+  width: 100%;;
+  margin: auto;
+}
+
+.timeline::after {
+  content: "";
+  position: absolute;
+  width: 4px;
+  background-color: #c3a04f;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.timeline-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  margin: 40px 0;
+}
+
+.timeline-item.left .timeline-content {
+  order: 1;
+  text-align: right;
+}
+
+.timeline-item.left .timeline-image {
+  order: 2;
+}
+
+.timeline-item.right .timeline-content {
+  order: 2;
+  text-align: left;
+}
+
+.timeline-item.right .timeline-image {
+  order: 1;
+}
+
+.timeline-content {
+  background: #fff;
+  padding: 30px 35px;
+  border-radius: 15px;
+  width: 45%;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+  max-height: 400px; 
+  overflow-y: auto; 
+  scrollbar-width: thin;
+  scrollbar-color: #c3a04f transparent;
+}
+
+.timeline-content::-webkit-scrollbar {
+  width: 6px;
+}
+.timeline-content::-webkit-scrollbar-thumb {
+  background-color: #c3a04f;
+  border-radius: 5px;
+}
+
+.timeline-content h3 {
+  font-size: 1.8rem;
+  color: #333;
+  margin-bottom: 15px;
+  word-break: break-word; 
+}
+
+.timeline-content h4 {
+  font-size: 1.3rem;
+  color: #c3a04f;
+  margin-bottom: 12px;
+  line-height: 1.4;
+  word-break: break-word;
+}
+
+.timeline-content p {
+  color: #555;
+  line-height: 1.7;
+  font-size: 1.05rem;
+  margin-bottom: 10px;
+}
+
+.timeline-image {
+  width: 45%;
+  height: 320px; 
+  background-size: cover;
+  background-position: center;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+/* Responsive */
+@media (max-width: 768px) {
+  .timeline::after {
+    display: none; 
+  }
+  .timeline-item {
+    flex-direction: column;
+    text-align: left;
+  }
+  .timeline-item.left .timeline-content,
+  .timeline-item.right .timeline-content {
+    order: 2;
+    width: 100%;
+    text-align: left;
+  }
+  .timeline-image {
+    order: 1;
+    width: 100%;
+    height: 200px;
+    margin-bottom: 20px;
+  }
+}

@@ -1,0 +1,31 @@
+.adc-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px; 
+  min-width: 180px;          
+  padding: 12px 30px;
+  background-color: transparent;
+  color: #444444;
+  text-decoration: none;
+  border-radius: 25px;
+  font-weight: bold;
+  font-size: 1.1rem;          
+  white-space: normal;        
+  text-align: center;
+  box-sizing: border-box;
+  word-break: break-word;  
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.adc-button:hover {
+  transform: scale(1.05);
+  background-color: #d4af37;
+}
+
+.adc-button svg {
+  transition: transform 0.5s ease; 
+}
+
+.adc-button:hover svg {
+  transform: translateX(8px);
+}

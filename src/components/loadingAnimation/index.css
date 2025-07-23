@@ -1,0 +1,19 @@
+.loading-container {
+    display: flex;
+    justify-content: center;
+}
+
+.loading-background {
+    position: fixed;
+    background-color: black;
+    width: 100vw;
+    height: 100vh;
+    opacity: 0.9;
+    z-index: 50;
+}
+
+.loading-gif {
+    position: fixed;
+    top: 40%;
+    z-index: 100;
+}
