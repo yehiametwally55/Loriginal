@@ -1,8 +1,6 @@
 import './ArtStudio.css'
 import AtelierCard from '../../components/Atelier-Card/Atelier-card'
-import image1 from "../../assets/images/429898127_895598959241013_6903446439233379236_n-1024x683.jpg"
 import image2 from "../../assets/images2/164267790_1584727908385866_2446087196405178210_n.jpg";
-import image3 from "../../assets/images2/281768792_1881217942070193_3064998488503889028_n.png";
 import image4 from "../../assets/images2/491753503_1213700094097563_5467536629815548368_n.jpg";
 import image5 from "../../assets/images2/493248006_1220994080034831_5372316327407734880_n.jpg";
 import image6 from "../../assets/images2/492489541_1220994306701475_5584531886465384020_n.jpg"
@@ -11,23 +9,23 @@ import image8 from "../../assets/images2/493835089_1220994160034823_499604142127
 import image9 from "../../assets/images2/509072549_1268498388617733_561161729989470512_n.jpg"
 const ArtStudio = () => {
  
-  const gallery = [
-    {
-      image: image2
-    },
-    {
-      image: image3
-    },
-    {
-      image: image4
-    },
-    {
-      image: image5
-    },
-    {
-      image: image6
-    }
-  ]
+  // const gallery = [
+  //   {
+  //     image: image2
+  //   },
+  //   {
+  //     image: image3
+  //   },
+  //   {
+  //     image: image4
+  //   },
+  //   {
+  //     image: image5
+  //   },
+  //   {
+  //     image: image6
+  //   }
+  // ]
   return (
 <>
   <section className='container-Art'>

@@ -4,12 +4,10 @@ import image1 from "../../assets/images/430744993_895606122573630_69840050070971
 import image2 from "../../assets/images/429893507_895607842573458_5985357423929257149_n-1024x683.jpg";
 import image3 from "../../assets/images/478892007_2616588745199772_4064677020525397183_n.jpg";
 import image4 from "../../assets/images/164267790_1584727908385866_2446087196405178210_n.jpg";
-import imageTeamBuiliding1 from "../../assets/images/Team-building-1-370x487.png";
 import imageTeamBuiliding2 from "../../assets/images/Team-building-2-1.png";
 import imageTeamBuiliding3 from "../../assets/images/Team-building-2-2.png";
 import imageTeamBuiliding4 from "../../assets/images/Team-building-2-3.png";
 import image5 from "../../assets/images/164267790_1584727908385866_2446087196405178210_n.jpg";
-import image6 from "../../assets/images/164267790_1584727908385866_2446087196405178210_n.jpg";
 import { FaArrowDown, FaArrowUp, FaMapMarkerAlt } from "react-icons/fa";
 import { FaArrowRightLong } from "react-icons/fa6";
 import Button from "../../components/Button/button";

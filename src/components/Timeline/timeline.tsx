@@ -1,4 +1,4 @@
-import "./Timeline.css";
+import "./timeline.css";
 import image1 from "../../assets/Timeline-images/Screenshot 2025-07-21 144718.png";
 import image2 from "../../assets/Timeline-images/Screenshot 2025-07-21 144739.png";
 import image3 from "../../assets/Timeline-images/Screenshot 2025-07-21 144809.png";

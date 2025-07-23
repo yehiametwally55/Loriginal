@@ -1,7 +1,7 @@
-import React, { useEffect, useState } from 'react'
+import { useEffect, useState } from 'react'
 import './navbar.css'
 import navbarLogo from  "../../assets/images/navbarLogo.png"
-import { FaHome, FaRegClock, FaMapPin, FaSearchLocation, FaBars, FaTimes, FaChevronDown } from 'react-icons/fa'
+import { FaHome, FaRegClock, FaMapPin, FaSearchLocation, FaBars, FaTimes} from 'react-icons/fa'
 
 function TopBar() {
   const [searchFocused, setSearchFocused] = useState(false);
@@ -40,9 +40,9 @@ function Navbar() {
   }
 
   useEffect(() => {
-    let lastScroll = window.scrollY;
-  let ticking = false;
-  let lastShow = window.scrollY;
+  //   let lastScroll = window.scrollY;
+  // let ticking = false;
+  // let lastShow = window.scrollY;
     const onScroll = () => {
     if (window.scrollY === 0) {
       setShowTopBar(true);

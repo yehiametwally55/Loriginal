@@ -1,5 +1,5 @@
 import React, { useEffect, useRef, useState } from "react";
-import "./Carousel.css";
+import "./carousel.css";
 
 type CarouselProps = {
   images: string[];

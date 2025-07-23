@@ -5,8 +5,7 @@ import image39 from '../../assets/images/Image39-1.jpg'
 import image40 from '../../assets/images/Image40-1.png'
 import image41 from '../../assets/images/Image41.png'
 import image16 from '../../assets/images/Capture16-1.png'
-import { FaXTwitter, FaFacebook, FaTumblr, FaPaperPlane } from 'react-icons/fa6';
-import { useEffect, useState } from 'react'
+import { FaXTwitter, FaFacebook, FaTumblr} from 'react-icons/fa6';
 import CommentSection from './CommentSection'
 import AtelierCard from '../../components/Atelier-Card/Atelier-card'
 

@@ -1,7 +1,7 @@
 import "./Visit.css";
 import AtelierCard from "../../components/Atelier-Card/Atelier-card";
 import image1 from "../../assets/images/287499968_1900125693512751_2001862726997998204_n-1024x576.jpg";
-import {FaCamera, FaCoffee, FaMapMarked, FaMapMarkedAlt, FaMapMarker, FaMapMarkerAlt, FaMusic, FaRegArrowAltCircleRight, FaShoppingBag } from "react-icons/fa";
+import {FaCamera, FaCoffee, FaMapMarkerAlt, FaMusic, FaRegArrowAltCircleRight, FaShoppingBag } from "react-icons/fa";
 import image2 from "../../assets/images/429898127_895598959241013_6903446439233379236_n-1024x683.jpg";
 import image3 from "../../assets/images/284533645_1890170881174899_4687183235715934538_n-1536x1039.jpg";
 import image4 from "../../assets/images/430470354_895596872574555_1978860230065548701_n-1024x576.jpg";
